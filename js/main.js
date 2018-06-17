@@ -11,3 +11,9 @@ function toggleModal() {
     if (elModal.style.display === "none") elModal.style.display = "block";
     else elModal.style.display = "none";
 }
+
+function toggleDropdown() {
+    // TODO: Make the generic function
+    var elDropdown = document.querySelector('.dropdown-list');
+    elDropdown.classList.toggle('open-dropdown');
+}
