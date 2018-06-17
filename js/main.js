@@ -8,8 +8,7 @@ function toggleMenu(elBtn) {
 
 function toggleModal() {
     var elModal = document.querySelector('.modal');
-    if (elModal.style.display === "none") elModal.style.display = "block";
-    else elModal.style.display = "none";
+    elModal.classList.toggle('open-modal');
 }
 
 function toggleDropdown() {

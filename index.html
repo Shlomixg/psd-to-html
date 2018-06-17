@@ -14,11 +14,11 @@
     <header>
         <nav class="container flex space-between align-items-center">
             <div class="logo flex align-items-center justify-content-center">blogin</div>
-            <button class="btn-toggle-menu hamburger hamburger--collapse" type="button" onclick="toggleMenu(this)">
+            <div class="btn-toggle-menu hamburger hamburger--collapse" type="button" onclick="toggleMenu(this)">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
-            </button>
+            </div>
             <ul class="main-menu clean-list">
                 <li class="dropdown" onclick="toggleDropdown()">
                     <a class="dropdown-link" href="#">journal ▽</a>
@@ -65,8 +65,8 @@
                             sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
                     </div>
-                    <button type="button" class="read-more" onclick="toggleModal(); event.stopPropagation()">
-                        <span class="spn-arrow">continue reading</span>
+                    <button type="button" class="btn-arrow" onclick="toggleModal(); event.stopPropagation()">
+                        continue reading
                     </button>
                 </div>
             </li>
@@ -83,8 +83,8 @@
                             sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
                     </div>
-                    <button type="button" class="read-more" onclick="toggleModal(); event.stopPropagation()">
-                        <span class="spn-arrow">continue reading</span>
+                    <button type="button" class="btn-arrow" onclick="toggleModal(); event.stopPropagation()">
+                        continue reading
                     </button>
                 </div>
             </li>
@@ -101,8 +101,8 @@
                             sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
                     </div>
-                    <button type="button" class="read-more" onclick="toggleModal(); event.stopPropagation()">
-                        <span class="spn-arrow">continue reading</span>
+                    <button type="button" class="btn-arrow" onclick="toggleModal(); event.stopPropagation()">
+                        continue reading
                     </button>
                 </div>
             </li>
@@ -149,9 +149,9 @@
     </footer>
 
     <!-- Modal -->
-    <div id="modal" class="modal">
+    <div id="modal" class="modal" onclick="toggleModal()">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-header">
                 <span class="close" onclick="toggleModal()">&times;</span>
                 <h2>Join us to get access to the latest stories!</h2>
